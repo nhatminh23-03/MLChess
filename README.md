@@ -195,7 +195,6 @@ pip install chess scikit-learn numpy pandas joblib ipywidgets
 | `Chess_ML.ipynb` | Interactive Jupyter notebook with chess GUI |
 | `ml_chess_engine.py` | Core ML evaluation module (importable) |
 | `train_chess_eval_model.py` | Training script for the MLP model |
-| `train_chess_eval_model_streaming.py` | Streaming trainer for large datasets |
 | `chess_eval_mlp.joblib` | Serialized trained MLP model |
 | `feature_config.json` | Feature metadata (vector length, normalization params) |
 
