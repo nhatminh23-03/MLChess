@@ -24,7 +24,7 @@ Assignment2/
 ├── Chess_ML.ipynb                    # Main interactive chess application
 ├── ml_chess_engine.py                # ML evaluation engine (drop-in module)
 ├── train_chess_eval_model.py         # Training script for the MLP model
-├── chess_eval_mlp.joblib             # Trained model (8.5 MB)
+├── chess_eval_mlp.joblib             # Trained model
 ├── feature_config.json               # Feature metadata
 ├── chessData.csv                     # Kaggle chess evaluations dataset
 └── README.md                         # This file
@@ -116,30 +116,29 @@ python train_chess_eval_model.py \
 
 ## Application Screenshots
 
-### Screenshot 1: Initial Board State
-```
-[Add screenshot of the chess board at the starting position here]
-```
+### Screenshot 1: 
 
-### Screenshot 2: AI Analysis Panel
-```
-[Add screenshot showing the AI Analysis panel with top 20 moves here]
-```
+![Initial board](screenshots/1st.png)
 
-### Screenshot 3: Mid-Game Position
-```
-[Add screenshot of a position during gameplay here]
-```
 
-### Screenshot 4: Move Highlighting
-```
-[Add screenshot showing piece selection and move highlighting here]
-```
+### Screenshot 2: 
 
-### Screenshot 5: Game Over State
-```
-[Add screenshot of a completed game here]
-```
+![AI analysis panel](screenshots/2nd.png)
+
+
+### Screenshot 3: 
+
+![Game position](screenshots/3rd.png)
+
+
+### Screenshot 4: 
+
+![Piece selection](screenshots/4th.png)
+
+
+### Screenshot 5: 
+
+![Completed game](screenshots/5th.png)
 
 ## Model Performance
 
@@ -210,24 +209,6 @@ pip install chess scikit-learn numpy pandas joblib ipywidgets
 6. **View Analysis**: Check the AI Analysis panel for top moves and scores
 7. **Undo**: Click "Undo" to take back moves
 8. **Flip Board**: Click "Flip" to change perspective
-
-
-
-## Limitations & Future Work
-
-### Current Limitations
-
-- **1-Ply Search**: Only evaluates immediate moves (no deep lookahead)
-- **No Opening Book**: Doesn't use chess opening theory
-- **Tanh Normalization**: Approximate centipawn conversion may be inaccurate for extreme positions
-
-### Future Improvements
-
-- Implement N-ply search with alpha-beta pruning
-- Add opening book integration
-- Increase model depth (more hidden layers)
-- Train on larger dataset (full Kaggle dataset)
-- Add UCI engine protocol support
 
 
 
