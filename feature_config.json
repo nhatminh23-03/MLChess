@@ -1,0 +1,21 @@
+{
+  "feature_version": 1,
+  "pieces": [
+    "P",
+    "N",
+    "B",
+    "R",
+    "Q",
+    "K",
+    "p",
+    "n",
+    "b",
+    "r",
+    "q",
+    "k"
+  ],
+  "vector_length": 781,
+  "label_normalization": "tanh(eval_cp/400)",
+  "denom": 400.0,
+  "include_ep": true
+}
